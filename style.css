@@ -1,0 +1,125 @@
+/* General background and font */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('assets/bg.jpg'); /* Optional */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Centered container for full-screen forms and admin content */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Forms for login, register, create post */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Common input, textarea, select, buttons */
+input, select, button, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Submit buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+/* Tables for admin panel */
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+/* Table headers and cells */
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #4a90e2;
+    color: white;
+    font-weight: 600;
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background-color: #f0f7ff;
+}
+
+/* Header texts */
+h2, h3 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Button-style links (like in dashboard) */
+.btn-link {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-link:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive - make tables scroll on smaller screens */
+@media (max-width: 768px) {
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Small fix for select inside table form */
+select {
+    max-width: 120px;
+    margin: 0 auto;
+}
